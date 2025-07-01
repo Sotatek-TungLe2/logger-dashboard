@@ -15,7 +15,7 @@ export default function DashboardPage() {
   ]);
   const [activeTab, setActiveTab] = useState(0);
 
-  // Thêm tab mới
+
   const handleAddTab = () => {
     const newKey = `Tab ${tabs.length + 1}`;
     setTabs([
@@ -25,7 +25,7 @@ export default function DashboardPage() {
     setActiveTab(tabs.length);
   };
 
-  // Xóa tab
+
   const handleRemoveTab = (idx: number) => {
     if (tabs.length === 1) return;
     window.confirm("정말로 이 탭을 삭제하시겠습니까?")
@@ -39,12 +39,12 @@ export default function DashboardPage() {
     showToast('탭이 삭제되었습니다.', 'success');
   };
 
-  // Đổi tên tab
+
   const handleRenameTab = (idx: number, newLabel: string) => {
     setTabs(tabs.map((tab, i) => i === idx ? { ...tab, label: newLabel } : tab));
   };
 
-  // Thêm widget cho tab hiện tại
+
   const handleAddWidget = (type: string, id: string) => {
     const currentRef = tabs[activeTab].ref;
     if (currentRef.current && currentRef.current.addWidget) {
@@ -52,7 +52,6 @@ export default function DashboardPage() {
     }
   };
 
-  // Dropdown menu cho thêm widget
   const addWidgetMenu = (
     <div className="flex flex-col bg-neutral-900 border border-neutral-700 rounded shadow z-50">
       <button
@@ -88,7 +87,7 @@ export default function DashboardPage() {
     </div>
   );
 
-  // Render nội dung cho từng tab
+
   const contents = tabs.map((tab, idx) => (
     <Dashboard key={tab.key} ref={tab.ref} isInitial={idx === 0} />
   ));

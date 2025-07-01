@@ -12,11 +12,10 @@ export function DropdownButton({ icon, label, children }: DropdownButtonProps) {
   const [open, setOpen] = useState(false);
   const btnRef = useRef<HTMLButtonElement>(null);
 
-  // Đóng dropdown khi click ra ngoài
+
   useEffect(() => {
     if (!open) return;
     const handleClick = (e: MouseEvent) => {
-      // Nếu click vào chính menu dropdown thì không đóng
       const menu = btnRef.current?.nextElementSibling;
       if (
         btnRef.current &&

@@ -14,7 +14,7 @@ export default function Pagination({
   totalItems,
   onPageChange,
 }: PaginationProps) {
-  // Hiển thị tối đa 5 số trang, có thể điều chỉnh theo ý bạn
+ 
   const getPages = () => {
     const pages = [];
     let start = Math.max(1, page - 1);

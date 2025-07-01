@@ -41,7 +41,7 @@ export default function CardWithAction({ title, children, onRemove, className }:
                 className="flex align-center !justify-between w-full text-left text-primary py-1 px-2 hover:bg-neutral-700"
                 onClick={handleRemove}
               >
-                Remove
+                삭제됨
                 <X width={18} height={18} />
               </Button>
             </div>
