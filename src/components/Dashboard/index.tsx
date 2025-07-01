@@ -195,11 +195,11 @@ const Dashboard = forwardRef(function Dashboard(props: DashboardProps, ref) {
         ...defaultSummary.map((item, idx) => ({
           id: `summary-${idx}`,
           type: "summary" as const,
-          title: "위젯 제목",
+          title: "위젯 제목 위젯 제목 위젯 제목 ",
           data: item,
           col: "grid-cols-1 sm:grid-cols-4 lg:grid-cols-8",
         })),
-        { id: "pie", type: "chart", title: "위젯 제목", col: "grid-cols-1 md:grid-cols-3" },
+        { id: "pie", type: "chart", title: "위젯 제목 위젯 제목 위젯 제목", col: "grid-cols-1 md:grid-cols-3" },
         { id: "bar", type: "chart", title: "위젯 제목", col: "grid-cols-1 md:grid-cols-3" },
         { id: "column", type: "chart", title: "위젯 제목", col: "grid-cols-1 md:grid-cols-3" },
         { id: "table", type: "table", title: "최근 탐지 내역", col: "grid-cols-1" },
@@ -266,7 +266,7 @@ const Dashboard = forwardRef(function Dashboard(props: DashboardProps, ref) {
         return (
           <>
             <div className="text-sm font-bold">{widget.data?.title}</div>
-            <div className="text-2xl font-bold text-white">
+            <div className="text-xl font-bold mt-4">
               {widget.data?.value}
             </div>
           </>

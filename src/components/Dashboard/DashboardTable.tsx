@@ -43,7 +43,7 @@ const DashboardTable = () => {
   return (
     <div className="overflow-auto">
       <table className="w-full text-sm text-left">
-        <thead className="text-neutral-400 border-b border-primary">
+        <thead className="bg-base-250 text-system-content border-b-2 border-primary-950 ">
           <tr>
             <th className="p-2">#</th>
             <th className="p-2">시간</th>
@@ -57,10 +57,10 @@ const DashboardTable = () => {
           </tr>
         </thead>
         <tbody>
-          {pagedData.map((row) => (
+          {pagedData.map((row,idx) => (
             <tr
               key={row.id}
-              className="border-b border-neutral-800 hover:bg-neutral-800"
+              className={`border-b-2 border-inlinecode-100 text-system-content ${idx % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`} 
             >
               <td className="p-2">{row.id}</td>
               <td className="p-2">{row.time}</td>

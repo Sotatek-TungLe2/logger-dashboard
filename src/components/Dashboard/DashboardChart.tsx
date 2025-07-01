@@ -16,11 +16,11 @@ const DashboardChart: React.FC = () => {
         },
         xAxis: {
           categories: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
-          labels: { style: { color: '#ffffff' } },
+          labels: { style: { color: '#EBEBEB' } },
         },
         yAxis: {
           title: { text: 'Events' },
-          labels: { style: { color: '#ffffff' } },
+          labels: { style: { color: '#EBEBEB' } },
         },
         series: [
           {
@@ -37,7 +37,7 @@ const DashboardChart: React.FC = () => {
           },
         ],
         legend: {
-          itemStyle: { color: '#ffffff' },
+          itemStyle: { color: '#EBEBEB' },
         },
         credits: { enabled: false },
       });

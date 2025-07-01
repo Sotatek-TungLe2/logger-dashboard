@@ -4,6 +4,12 @@
  * Repository: https://github.com/logpresso/sonar5
  */
 /*! tailwindcss v4.1.10 | MIT License | https://tailwindcss.com */
+@layer base {
+  body {
+    font-family: 'Pretendard', sans-serif;
+    color: var(--color-base-content, #d4d4d4);
+  }
+}
 @layer properties;
 .btn {
   cursor: pointer;

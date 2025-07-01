@@ -2,13 +2,17 @@
    /* Base Colors */
   --color-base: #0d0d0d;
   --color-base-100: #1a1a1a;
+  --color-base-150: #1D2125;
+  --color-base-175: #161A1D;
   --color-base-200: #2a2a2a;
-  --color-base-content: #ffffff;
+  --color-base-250: #22272B;
+  
+  --color-base-content: #d4d4d4 ;
   --color-base-content-100: #cccccc;
   --color-base-content-200: #999999;
 
   /* Primary */
-  --color-primary: #ff6900;
+  --color-primary: #F46428;
   --color-primary-100: #ffd4c9;
   --color-primary-200: #FFE9E4;
   --color-primary-300: #FFD4C9;
@@ -18,7 +22,7 @@
   --color-primary-700: #FF6900;
   --color-primary-800: #E85F00;
   --color-primary-900: #D15600;
-  --color-primary-950: #B54A00;
+  --color-primary-950: #FF7D4A;
   --color-primary-content: #ffffff;
 
   /* Success */
@@ -36,6 +40,8 @@
 
   /* Info */
   --color-info: #3b82f6;
+  --color-info-100: #bfdbfe;
+  --color-info-200: #60a5fa;
   --color-info-content: #ffffff;
 
   /* Neutral */
@@ -52,9 +58,10 @@
 
   /* System */
   --color-system: #6366f1;
-  --color-system-content: #ffffff;
+  --color-system-content: #EBEBEB;
 
   /* Inline Code */
   --color-inlinecode: #1e293b;
+  --color-inlinecode-100: #2C333A;
   --color-inlinecode-content: #f59e0b;
 }
