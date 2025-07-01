@@ -1,0 +1,60 @@
+@theme {
+   /* Base Colors */
+  --color-base: #0d0d0d;
+  --color-base-100: #1a1a1a;
+  --color-base-200: #2a2a2a;
+  --color-base-content: #ffffff;
+  --color-base-content-100: #cccccc;
+  --color-base-content-200: #999999;
+
+  /* Primary */
+  --color-primary: #ff6900;
+  --color-primary-100: #ffd4c9;
+  --color-primary-200: #FFE9E4;
+  --color-primary-300: #FFD4C9;
+  --color-primary-400: #FFBFAE;
+  --color-primary-500: #FFA681;
+  --color-primary-600: #FF8740;
+  --color-primary-700: #FF6900;
+  --color-primary-800: #E85F00;
+  --color-primary-900: #D15600;
+  --color-primary-950: #B54A00;
+  --color-primary-content: #ffffff;
+
+  /* Success */
+  --color-success: #22c55e;
+  --color-success-content: #ffffff;
+
+  /* Warning */
+  --color-warning: #facc15;
+  --color-warning-content: #000000;
+
+  /* Error */
+  --color-error: #ef4444;
+  --color-error-content: #ffffff;
+  --color-error-alpha: rgba(239, 68, 68, 0.2);
+
+  /* Info */
+  --color-info: #3b82f6;
+  --color-info-content: #ffffff;
+
+  /* Neutral */
+  --color-neutral: oklch(26.9% 0 0);
+  --color-neutral-100: #52525b;
+  --color-neutral-200: #71717a;
+  --color-neutral-content: #e4e4e7;
+
+  /* Alpha */
+  --color-base-alpha: rgba(0, 0, 0, 0.4);
+  --color-primary-alpha: rgba(249, 115, 22, 0.2);
+  --color-neutral-alpha: rgba(63, 63, 70, 0.2);
+  --color-base-content-alpha: rgba(255, 255, 255, 0.3);
+
+  /* System */
+  --color-system: #6366f1;
+  --color-system-content: #ffffff;
+
+  /* Inline Code */
+  --color-inlinecode: #1e293b;
+  --color-inlinecode-content: #f59e0b;
+}
