@@ -19,9 +19,15 @@ const pieOptions = {
   chart: { backgroundColor: "transparent", type: "pie", height: 350 },
   title: false,
   legend: {
-    itemStyle: { color: "#fff" },
-    align: "center",
-    verticalAlign: "bottom",
+    layout: 'horizontal',
+    align: 'center',
+    verticalAlign: 'bottom',
+    itemWidth: 100,
+    width: 320,
+    itemStyle: {
+      whiteSpace: 'nowrap',
+      color: '#EBEBEB'
+    }
   },
   plotOptions: {
     pie: {
@@ -71,9 +77,14 @@ const barOptions = {
     gridLineColor: "#333",
   },
   legend: {
-    itemStyle: { color: "#fff" },
-    align: "center",
-    verticalAlign: "bottom",
+    layout: 'horizontal',
+    align: 'center',
+    verticalAlign: 'bottom',
+    itemWidth: 100,
+    itemStyle: {
+      whiteSpace: 'nowrap',
+      color: '#EBEBEB'
+    }
   },
   plotOptions: {
     series: {
@@ -90,6 +101,10 @@ const barOptions = {
     { name: "차트 이름", data: [0, 0, 0, 0, 0, 0, 7, 0], color: "#34A853" },
     { name: "차트 이름", data: [0, 0, 0, 0, 0, 0, 0, 0], color: "#A142F4" },
     { name: "차트 이름", data: [0, 0, 0, 0, 0, 0, 0, 18], color: "#F44292" },
+            { name: "차트 이름", data: [0, 0, 0, 4, 0, 0, 0, ], color: "#FBBC85" },
+        { name: "차트 이름", data: [0, 0, 0, 5, 0, 0, 0, 28], color: "#347853" },
+        { name: "차트 이름", data: [0, 0, 6, 0, 0, 0, 0, 8], color: "#A132F4" },
+        { name: "차트 이름", data: [8, 7, 0, 0, 0, 0, 0, 4], color: "#F61292" },
   ],
   credits: { enabled: false },
   backgroundColor: "transparent",
@@ -120,9 +135,15 @@ const columnOptions = {
     gridLineColor: "#333",
   },
   legend: {
-    itemStyle: { color: "#fff" },
-    align: "center",
-    verticalAlign: "bottom",
+    layout: 'horizontal',
+    align: 'center',
+    verticalAlign: 'bottom',
+    itemWidth: 100,
+    width: 320,
+    itemStyle: {
+      whiteSpace: 'nowrap',
+      color: '#EBEBEB'
+    }
   },
   plotOptions: {
     series: {
