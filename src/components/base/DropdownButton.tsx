@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import { Button } from "@/components/base/Button";
 import React, { useRef, useState, useEffect } from "react";
 
@@ -34,14 +33,14 @@ export function DropdownButton({ icon, label, children }: DropdownButtonProps) {
     <div className="relative inline-block">
       <Button
         ref={btnRef}
-        className="flex items-center gap-1 px-3 rounded-lg"
+        className="flex items-center gap-1 px-2 rounded-lg"
         variant="outline"
         onClick={() => setOpen((v) => !v)}
         type="button"
       >
         {icon}
         <span>{label}</span>
-        <ChevronDown size={14} strokeWidth={1} className="ml-2" />
+        <svg className="ml-1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 0.45 0.45" fill="none"><path d="M0.12 0.18h0.21l-0.105 0.135z" fill="#ebebeb"/></svg>
       </Button>
       {open && children && (
         <div className="absolute right-0 mt-2 min-w-[160px] bg-neutral-900 border border-neutral-700 text-white rounded shadow z-50">

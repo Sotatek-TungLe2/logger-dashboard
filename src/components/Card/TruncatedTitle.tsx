@@ -17,7 +17,7 @@ const SmartTruncatedTitle: React.FC<SmartTruncatedTitleProps> = ({ title }) => {
   }, [title]);
 
   return (
-    <div className="relative flex items-center gap-2 w-[90%]">
+    <div className="relative flex items-center gap-2 w-[88%]">
       <div
         ref={titleRef}
         className="truncate max-w-full text-sm text-system-content cursor-default"

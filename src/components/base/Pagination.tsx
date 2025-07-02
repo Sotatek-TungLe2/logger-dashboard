@@ -11,7 +11,6 @@ interface PaginationProps {
 export default function Pagination({
   page,
   totalPages,
-  totalItems,
   onPageChange,
 }: PaginationProps) {
  
@@ -73,7 +72,7 @@ export default function Pagination({
       >
         <ChevronsRight size={14} />
       </Button>
-      <Button className="px-1 border-2 h-8 flex border-inlinecode-100 !bg-base-175 rounded-lg disabled:opacity-50 text-system-content" variant="outline">{totalItems}건</Button>
+      <Button className="px-1 border-2 h-8 flex border-inlinecode-100 !bg-base-175 rounded-lg disabled:opacity-50 text-system-content" variant="outline">{totalPages}건</Button>
     </div>
   );
 }

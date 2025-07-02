@@ -8,7 +8,7 @@ export default function Tooltips({ message, children }: TooltipProps) {
         <div className="group relative inline-flex">
             {children}
             <span className="
-                absolute top-10 left-1/2 -translate-x-1/2
+                absolute top-10 left-0
                 scale-0 group-hover:scale-100 transition-all
                 rounded-sm bg-black/90 p-2 text-xs text-base-content
                 whitespace-nowrap min-w-max z-50

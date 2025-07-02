@@ -64,7 +64,7 @@ const DashboardTable = () => {
           {pagedData.map((row,idx) => (
             <tr
               key={row.id}
-              className={`border-b-1 border-inlinecode-100 text-system-content ${idx % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`} 
+              className={`border-b-1 border-inlinecode-100 text-system-content ${idx % 2 === 0 ? "bg-base-150" : "bg-base-175" }`} 
             >
               <td className="p-2">#</td>
               <td className="p-2">{row.time}</td>

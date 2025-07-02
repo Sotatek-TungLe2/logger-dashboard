@@ -98,7 +98,7 @@ export default function DashboardPage() {
       contents={contents}
       addNewTab={handleAddTab}
       rightActions={
-        <div className="flex gap-2">
+        <div className="flex gap-2 mb-2">
           <DropdownButton icon={<Settings size={18} strokeWidth={1.5} />} label="설정">
             {addWidgetMenu}
           </DropdownButton>
