@@ -13,7 +13,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         className={cn(
-          "inline-flex items-center justify-center font-medium transition-colors cursor-pointer disabled:opacity-50 disabled:pointer-events-none",
+          "inline-flex items-center justify-center font-medium transition-colors cursor-pointer disabled:opacity-30 disabled:pointer-events-none",
           variant === "default" && "bg-white text-black ",
           variant === "text" && "bg-transparent text-system-content ",
           variant === "outline" && "border border-neutral bg-neutral-900 text-system-content",

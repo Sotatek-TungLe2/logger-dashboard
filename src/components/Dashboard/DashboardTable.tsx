@@ -74,7 +74,7 @@ const DashboardTable = () => {
             </tr>
           ))}
             {Array.from({ length: pageSize - pagedData.length }).map((_, i) => (
-    <tr key={`empty-${i}`} className="border-b border-neutral-800 hover:bg-neutral-800">
+    <tr key={`empty-${i}`} className={`border-b-2 border-inlinecode-100 text-system-content ${i % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`}>
       {Array.from({ length: 9 }).map((_, j) => (
         <td key={j} className="p-2">&nbsp;</td>
       ))}

@@ -31,7 +31,7 @@ export default function Pagination({
     <div className="flex items-center gap-1 mt-4 justify-end">
       <Button
         variant="outline"
-        className="w-8 h-8 border-2 border-inlinecode-100 bg-base-175 rounded-lg text-system-content"
+        className="w-8 h-8 border-2 border-inlinecode-100 !bg-base-175 rounded-lg text-system-content"
         onClick={() => onPageChange(1)}
         disabled={page === 1}
       >
@@ -39,7 +39,7 @@ export default function Pagination({
       </Button>
       <Button
         variant="outline"
-        className="w-8 h-8 flex items-center justify-center border-2 border-inlinecode-100 bg-base-250  rounded-lg text-system-content"
+        className="w-8 h-8 flex items-center justify-center border-2 border-inlinecode-100 !bg-base-175 rounded-lg text-system-content"
         onClick={() => onPageChange(page - 1)}
         disabled={page === 1}
       >
@@ -49,8 +49,8 @@ export default function Pagination({
         <Button
           key={p}
           variant="outline"
-          className={`w-8 h-8 border-2 border-inlinecode-100 bg-base-250 rounded-lg text-system-content ${
-            page === p ? " !border-1 border-orange-500 text-orange-400" : ""
+          className={`w-8 h-8 border-2 border-inlinecode-100 !bg-base-175 rounded-lg text-system-content ${
+            page === p ? " !border-1 border-primary-950 text-orange-400" : ""
           }`}
           onClick={() => onPageChange(p)}
         >
@@ -58,7 +58,7 @@ export default function Pagination({
         </Button>
       ))}
       <Button
-        className="w-8 h-8 border-2 border-inlinecode-100 bg-base-250  rounded-lg text-system-content"
+        className="w-8 h-8 border-2 border-inlinecode-100 !bg-base-175 rounded-lg text-system-content"
         variant="outline"
         onClick={() => onPageChange(page + 1)}
         disabled={page === totalPages}
@@ -66,14 +66,14 @@ export default function Pagination({
         <ChevronRight size={14} />
       </Button>
       <Button
-        className="w-8 h-8 border-2 border-inlinecode-100 bg-base-250  rounded-lg text-system-content"
+        className="w-8 h-8 border-2 border-inlinecode-100 !bg-base-175 rounded-lg text-system-content"
         variant="outline"
         onClick={() => onPageChange(totalPages)}
         disabled={page === totalPages}
       >
         <ChevronsRight size={14} />
       </Button>
-      <Button className="px-1 border-2 h-8 flex border-inlinecode-100 bg-base-250 rounded-lg disabled:opacity-50 text-system-content" variant="outline">{totalItems}건</Button>
+      <Button className="px-1 border-2 h-8 flex border-inlinecode-100 !bg-base-175 rounded-lg disabled:opacity-50 text-system-content" variant="outline">{totalItems}건</Button>
     </div>
   );
 }
