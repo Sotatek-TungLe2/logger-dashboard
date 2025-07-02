@@ -1,4 +1,4 @@
-import { X } from "lucide-react";
+
 import React, { useState } from "react";
 import Tooltips from "./base/Tooltips";
 
@@ -19,9 +19,7 @@ export default function LoggerTab({
   rightActions,
   activeTab,
   setActiveTab,
-  onRemoveTab,
   onRenameTab,
-  addNewTab,
 }: LoggerTabProps) {
   const [editIdx, setEditIdx] = useState<number | null>(null);
   const [editValue, setEditValue] = useState("");
@@ -70,7 +68,7 @@ export default function LoggerTab({
                 </Tooltips>
               )}
               {/* Remove tab button */}
-              {tabs.length > 1 && (
+              {/* {tabs.length > 1 && (
                 <button
                   className="ml-1 text-xs text-base-content-100 hover:text-red-400"
                   onClick={() => onRemoveTab(index)}
@@ -78,10 +76,10 @@ export default function LoggerTab({
                 >
                   <X width={18} height={18} />
                 </button>
-              )}
+              )} */}
             </div>
           ))}
-          <button className="tab-nav-add" onClick={addNewTab}>
+          {/* <button className="tab-nav-add" onClick={addNewTab}>
             <svg
               className="tab-nav-add-icon"
               width="16"
@@ -103,7 +101,7 @@ export default function LoggerTab({
                 stroke-linecap="round"
               />
             </svg>
-          </button>
+          </button> */}
         </div>
         {/* Right actions */}
         <div className="flex items-center gap-2">{rightActions}</div>

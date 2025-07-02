@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Card, CardContent } from "./Card";
 import { EllipsisVertical, X } from "lucide-react";
 import { Button } from "../base/Button";
-import Tooltips from "../base/Tooltips";
+import TruncatedTitle from "./TruncatedTitle";
 
 interface CardWithActionProps {
   title: string;
@@ -24,11 +24,8 @@ export default function CardWithAction({ title, children, onRemove, className }:
   return (
     <Card className={`relative ${className}`}>
       <div className="flex items-center justify-between pb-2">
-        <Tooltips message={title}>
-    <span className="text-sm text-system-content font-semibold max-w-[80px] truncate block">
-      {title}
-    </span>
-  </Tooltips>
+
+        <TruncatedTitle title={title} />
         <div className="relative">
           <Button
             variant="outline"

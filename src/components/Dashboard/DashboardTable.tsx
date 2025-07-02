@@ -49,10 +49,14 @@ const DashboardTable = () => {
             <th className="p-2">시간</th>
             <th className="p-2">출발지 IP</th>
             <th className="p-2">출발지 포트</th>
+            <th className="p-2">출발지 IP</th>
+            <th className="p-2">출발지 포트</th>
             <th className="p-2">프로토콜</th>
             <th className="p-2">앱</th>
             <th className="p-2">동작</th>
             <th className="p-2">목적지 IP</th>
+            <th className="p-2">목적지 포트</th>
+             <th className="p-2">목적지 IP</th>
             <th className="p-2">목적지 포트</th>
           </tr>
         </thead>
@@ -60,10 +64,12 @@ const DashboardTable = () => {
           {pagedData.map((row,idx) => (
             <tr
               key={row.id}
-              className={`border-b-2 border-inlinecode-100 text-system-content ${idx % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`} 
+              className={`border-b-1 border-inlinecode-100 text-system-content ${idx % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`} 
             >
-              <td className="p-2">{row.id}</td>
+              <td className="p-2">#</td>
               <td className="p-2">{row.time}</td>
+              <td className="p-2">{row.srcIP}</td>
+              <td className="p-2">{row.srcPort}</td>
               <td className="p-2">{row.srcIP}</td>
               <td className="p-2">{row.srcPort}</td>
               <td className="p-2">{row.protocol}</td>
@@ -71,10 +77,12 @@ const DashboardTable = () => {
               <td className="p-2">{row.action}</td>
               <td className="p-2">{row.dstIP}</td>
               <td className="p-2">{row.dstPort}</td>
+              <td className="p-2">{row.dstIP}</td>
+              <td className="p-2">{row.dstPort}</td>
             </tr>
           ))}
             {Array.from({ length: pageSize - pagedData.length }).map((_, i) => (
-    <tr key={`empty-${i}`} className={`border-b-2 border-inlinecode-100 text-system-content ${i % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`}>
+    <tr key={`empty-${i}`} className={`border-b-1 border-inlinecode-100 text-system-content ${i % 2 === 0 ? "bg-base-175 hover:bg-base-250" : "bg-base-150" }`}>
       {Array.from({ length: 9 }).map((_, j) => (
         <td key={j} className="p-2">&nbsp;</td>
       ))}
